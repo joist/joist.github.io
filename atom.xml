@@ -4,13 +4,26 @@
  <title>Test Blog</title>
  <link href="http://joist.github.io//atom.xml" rel="self"/>
  <link href="http://joist.github.io//"/>
- <updated>2014-03-08T02:41:30+11:00</updated>
+ <updated>2014-03-08T04:32:39+11:00</updated>
  <id>http://joist.github.io/</id>
  <author>
    <name>Joist</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>I feel elevated</title>
+   <link href="http://joist.github.io//i-feel-elevated"/>
+   <updated>2014-03-08T04:30:01Z</updated>
+   <id>http://joist.github.io//i-feel-elevated</id>
+   <content type="html">&lt;p&gt;Code for the biomes works decently on elevation. I really should increase the sampling frequency but this&amp;#39;ll work as a test. I&amp;#39;ll just average the values at corners.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/5.png&quot; alt=&quot;Biome map&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/6.png&quot; alt=&quot;Elevation map&quot;&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Dat Map</title>
