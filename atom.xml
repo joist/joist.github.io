@@ -4,7 +4,7 @@
  <title>Test Blog</title>
  <link href="http://joist.github.io//atom.xml" rel="self"/>
  <link href="http://joist.github.io//"/>
- <updated>2014-03-06T01:20:31+11:00</updated>
+ <updated>2014-03-08T02:41:30+11:00</updated>
  <id>http://joist.github.io/</id>
  <author>
    <name>Joist</name>
@@ -13,25 +13,46 @@
 
  
  <entry>
-   <title>Test to Jekyll!2</title>
-   <link href="http://joist.github.io//test-to-jekyll"/>
-   <updated>2014-03-03T04:00:01Z</updated>
-   <id>http://joist.github.io//test-to-jekyll</id>
-   <content type="html">&lt;p&gt;You&amp;#39;ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory - edit this post and re-build (or run with the &lt;code&gt;-w&lt;/code&gt; switch) to see your changes!
-To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention: YYYY-MM-DD-name-of-post.ext.&lt;/p&gt;
+   <title>Dat Map</title>
+   <link href="http://joist.github.io//dat-map"/>
+   <updated>2014-03-08T02:00:01Z</updated>
+   <id>http://joist.github.io//dat-map</id>
+   <content type="html">&lt;p&gt;I don&amp;#39;t want to spend weeks trying to implement a map again. With that in mind I&amp;#39;m just going to cobble something together.&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www-cs-students.stanford.edu/%7Eamitp/game-programming/polygon-map-generation/demo.html&quot;&gt;amitp has a glorious map generator up on his site&lt;/a&gt; which I&amp;#39;ll just import from for now.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Hi, &amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Tom&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// prints &amp;quot;Hi, Tom&amp;quot; to console&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Voronoi would take too long to implement and square is too blocky, but hex looks nice.&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll&amp;#39;s GitHub repo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/1.png&quot; alt=&quot;Such map, very biomes&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;And hex can easily, but kludgily, be crammed into a square hole by doubling and offsetting the cells.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2.png&quot; alt=&quot;Squared version of map&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;It works surprisingly well and is extremely effective. Here&amp;#39;s how it works.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/3.png&quot; alt=&quot;Zoomed in to square cells&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Each hex cell is sized up to 4 square cells (2x2) which can be considered a single super-cell. Then each other column is shifted by a single cell.&lt;/p&gt;
+
+&lt;p&gt;The effect is that each super-cell touches 6 other super-cells by edge instead of 4, and 0 super-cells by corner, also instead of 4. The variance of the distances between cell centres reduces too, from ~40% to ~10%.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;ll probably ignore the super-cells for now and just treat them as regular cells, but it makes biome transitions look much smoother than what going square from the beginning gets you.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/4.png&quot; alt=&quot;Square from beginning&quot;&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Hello World</title>
+   <link href="http://joist.github.io//hello-world+copy"/>
+   <updated>2014-03-07T04:00:01Z</updated>
+   <id>http://joist.github.io//hello-world copy</id>
+   <content type="html">&lt;p&gt;So, it&amp;#39;s that time of year again when I start a game project destined to fail.&lt;/p&gt;
+
+&lt;p&gt;I expect to be sidetracked by real life within a month but I&amp;#39;ll be documenting my progress and most of everything will be thrown up on github to be perused at your leisure.&lt;/p&gt;
+
+&lt;p&gt;Here we go!&lt;/p&gt;
 </content>
  </entry>
  
