@@ -4,13 +4,26 @@
  <title>Test Blog</title>
  <link href="http://joist.github.io//atom.xml" rel="self"/>
  <link href="http://joist.github.io//"/>
- <updated>2014-03-08T04:32:39+11:00</updated>
+ <updated>2014-03-17T03:12:16+11:00</updated>
  <id>http://joist.github.io/</id>
  <author>
    <name>Joist</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Gifs</title>
+   <link href="http://joist.github.io//gifs"/>
+   <updated>2014-03-17T03:30:01Z</updated>
+   <id>http://joist.github.io//gifs</id>
+   <content type="html">&lt;p&gt;Added a simple shader and fixed my gif pipeline&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/7.gif&quot; alt=&quot;Cameraspace normal shader&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/8.gif&quot; alt=&quot;Modelspace normal shader&quot;&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>I feel elevated</title>
