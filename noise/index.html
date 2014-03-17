@@ -10,7 +10,7 @@
 
   <title>
     
-      Dat Map &middot; Test Blog
+      Noise &middot; Test Blog
     
   </title>
 
@@ -89,46 +89,30 @@
 
       <div class="container content">
         <div class="post">
-  <h1 class="post-title">Dat Map</h1>
-  <span class="post-date">08 Mar 2014</span>
-  <p>I don&#39;t want to spend weeks trying to implement a map again. With that in mind I&#39;m just going to cobble something together.</p>
+  <h1 class="post-title">Noise</h1>
+  <span class="post-date">18 Mar 2014</span>
+  <p>I bring you noise from my incomplete java port of someone&#39;s incomplete C# port of <a href="http://libnoise.sourceforge.net/">Libnoise</a></p>
 
-<p><a href="http://www-cs-students.stanford.edu/%7Eamitp/game-programming/polygon-map-generation/demo.html">amitp has a glorious map generator up on his site</a> which I&#39;ll just import from for now.</p>
+<p>Random noise
+<img src="/images/9.png" alt="Random noise"></p>
 
-<p>Voronoi would take too long to implement and square is too blocky, but hex looks nice.</p>
+<p>Perlin noise
+<img src="/images/10.png" alt="Perlin noise"></p>
 
-<p><img src="/images/1.png" alt="Such map, very biomes"></p>
+<p>Ridged multi-fractal noise (which creeps me out)
+<img src="/images/11.png" alt="Ridged multi-fractal noise"></p>
 
-<p>And hex can easily, but kludgily, be crammed into a square hole by doubling and offsetting the cells.</p>
+<p>Billow noise
+<img src="/images/12.png" alt="Billow noise"></p>
 
-<p><img src="/images/2.png" alt="Squared version of map"></p>
-
-<p>It works surprisingly well and is extremely effective. Here&#39;s how it works.</p>
-
-<p><img src="/images/3.png" alt="Zoomed in to square cells"></p>
-
-<p>Each hex cell is sized up to 4 square cells (2x2) which can be considered a single super-cell. Then each other column is shifted by a single cell.</p>
-
-<p>The effect is that each super-cell touches 6 other super-cells by edge instead of 4, and 0 super-cells by corner, also instead of 4. The variance of the distances between cell centres reduces too, from ~40% to ~10%.</p>
-
-<p>I&#39;ll probably ignore the super-cells for now and just treat them as regular cells, but it makes biome transitions look much smoother than what going square from the beginning gets you.</p>
-
-<p><img src="/images/4.png" alt="Square from beginning"></p>
+<p>Voronoi noise
+<img src="/images/13.png" alt="Voronoi noise"></p>
 
 </div>
 
 <div class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
-    
-      <li>
-        <h3>
-          <a href="/noise">
-            Noise
-            <small>18 Mar 2014</small>
-          </a>
-        </h3>
-      </li>
     
       <li>
         <h3>
@@ -143,6 +127,15 @@
         <h3>
           <a href="/i-feel-elevated">
             I feel elevated
+            <small>08 Mar 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/dat-map">
+            Dat Map
             <small>08 Mar 2014</small>
           </a>
         </h3>
