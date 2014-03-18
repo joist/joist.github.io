@@ -4,7 +4,7 @@
  <title>Test Blog</title>
  <link href="http://joist.github.io//atom.xml" rel="self"/>
  <link href="http://joist.github.io//"/>
- <updated>2014-03-17T23:58:07+11:00</updated>
+ <updated>2014-03-18T20:25:05+11:00</updated>
  <id>http://joist.github.io/</id>
  <author>
    <name>Joist</name>
@@ -13,22 +13,35 @@
 
  
  <entry>
+   <title>To scale</title>
+   <link href="http://joist.github.io//to-scale"/>
+   <updated>2014-03-19T03:30:01Z</updated>
+   <id>http://joist.github.io//to-scale</id>
+   <content type="html">&lt;p&gt;A simple visualisation of the map. It&amp;#39;s cut in half because my VBO indices overflowed.&lt;/p&gt;
+
+&lt;p&gt;Good enough for a test.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/14.gif&quot; alt=&quot;Rotating 3d map&quot;&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Noise</title>
    <link href="http://joist.github.io//noise"/>
    <updated>2014-03-18T03:30:01Z</updated>
    <id>http://joist.github.io//noise</id>
    <content type="html">&lt;p&gt;I bring you noise from my incomplete java port of someone&amp;#39;s incomplete C# port of &lt;a href=&quot;http://libnoise.sourceforge.net/&quot;&gt;Libnoise&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Random noise
+&lt;p&gt;Random noise 
 &lt;img src=&quot;/images/9.png&quot; alt=&quot;Random noise&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;Perlin noise
+&lt;p&gt;Perlin noise 
 &lt;img src=&quot;/images/10.png&quot; alt=&quot;Perlin noise&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;Ridged multi-fractal noise (which creeps me out)
+&lt;p&gt;Ridged multi-fractal noise (which creeps me out) 
 &lt;img src=&quot;/images/11.png&quot; alt=&quot;Ridged multi-fractal noise&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;Billow noise
+&lt;p&gt;Billow noise 
 &lt;img src=&quot;/images/12.png&quot; alt=&quot;Billow noise&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;Voronoi noise
