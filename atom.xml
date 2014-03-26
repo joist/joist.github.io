@@ -4,7 +4,7 @@
  <title>Test Blog</title>
  <link href="http://joist.github.io//atom.xml" rel="self"/>
  <link href="http://joist.github.io//"/>
- <updated>2014-03-18T20:25:05+11:00</updated>
+ <updated>2014-03-26T12:09:41+11:00</updated>
  <id>http://joist.github.io/</id>
  <author>
    <name>Joist</name>
@@ -20,6 +20,8 @@
    <content type="html">&lt;p&gt;A simple visualisation of the map. It&amp;#39;s cut in half because my VBO indices overflowed.&lt;/p&gt;
 
 &lt;p&gt;Good enough for a test.&lt;/p&gt;
+
+&lt;p&gt;edit: Actaully I fixed it because I needed a quad-batcher anyway.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/14.gif&quot; alt=&quot;Rotating 3d map&quot;&gt;&lt;/p&gt;
 </content>
