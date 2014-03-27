@@ -94,6 +94,33 @@
   
   <div class="post">
     <h1 class="post-title">
+      <a href="/train">
+        T'rain
+      </a>
+    </h1>
+
+    <span class="post-date">27 Mar 2014</span>
+
+    <p>Playing with a few different terrain representations.</p>
+
+<p>Cubed Voxel
+<img src="/images/15.png" alt="Cubed voxel terrain"></p>
+
+<p>Flattened Pipes
+<img src="/images/16.png" alt="Flattened pipes terrain"></p>
+
+<p>Traditional Heightmap
+<img src="/images/17.png" alt="Heightmap terrain"></p>
+
+<p>Floating Pipes
+<img src="/images/18.png" alt="Floating terrain"></p>
+
+<p>I find it interesting how tiny the voxel terrain looks (all the terrain maps are 32x32). I think it&#39;s because it&#39;s easy to judge scale in that screenshot from the cube shapes. Heightmap terrain in particular, you have no idea about scale until you place objects on the map.</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
       <a href="/to-scale">
         To scale
       </a>
@@ -170,41 +197,6 @@
 <p><img src="/images/5.png" alt="Biome map"></p>
 
 <p><img src="/images/6.png" alt="Elevation map"></p>
-
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/dat-map">
-        Dat Map
-      </a>
-    </h1>
-
-    <span class="post-date">08 Mar 2014</span>
-
-    <p>I don&#39;t want to spend weeks trying to implement a map again. With that in mind I&#39;m just going to cobble something together.</p>
-
-<p><a href="http://www-cs-students.stanford.edu/%7Eamitp/game-programming/polygon-map-generation/demo.html">amitp has a glorious map generator up on his site</a> which I&#39;ll just import from for now.</p>
-
-<p>Voronoi would take too long to implement and square is too blocky, but hex looks nice.</p>
-
-<p><img src="/images/1.png" alt="Such map, very biomes"></p>
-
-<p>And hex can easily, but kludgily, be crammed into a square hole by doubling and offsetting the cells.</p>
-
-<p><img src="/images/2.png" alt="Squared version of map"></p>
-
-<p>It works surprisingly well and is extremely effective. Here&#39;s how it works.</p>
-
-<p><img src="/images/3.png" alt="Zoomed in to square cells"></p>
-
-<p>Each hex cell is sized up to 4 square cells (2x2) which can be considered a single super-cell. Then each other column is shifted by a single cell.</p>
-
-<p>The effect is that each super-cell touches 6 other super-cells by edge instead of 4, and 0 super-cells by corner, also instead of 4. The variance of the distances between cell centres reduces too, from ~40% to ~10%.</p>
-
-<p>I&#39;ll probably ignore the super-cells for now and just treat them as regular cells, but it makes biome transitions look much smoother than what going square from the beginning gets you.</p>
-
-<p><img src="/images/4.png" alt="Square from beginning"></p>
 
   </div>
   

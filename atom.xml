@@ -4,13 +4,36 @@
  <title>Test Blog</title>
  <link href="http://joist.github.io//atom.xml" rel="self"/>
  <link href="http://joist.github.io//"/>
- <updated>2014-03-26T12:09:41+11:00</updated>
+ <updated>2014-03-27T21:53:39+11:00</updated>
  <id>http://joist.github.io/</id>
  <author>
    <name>Joist</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>T'rain</title>
+   <link href="http://joist.github.io//train"/>
+   <updated>2014-03-27T03:30:01Z</updated>
+   <id>http://joist.github.io//train</id>
+   <content type="html">&lt;p&gt;Playing with a few different terrain representations.&lt;/p&gt;
+
+&lt;p&gt;Cubed Voxel
+&lt;img src=&quot;/images/15.png&quot; alt=&quot;Cubed voxel terrain&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Flattened Pipes
+&lt;img src=&quot;/images/16.png&quot; alt=&quot;Flattened pipes terrain&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Traditional Heightmap
+&lt;img src=&quot;/images/17.png&quot; alt=&quot;Heightmap terrain&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Floating Pipes
+&lt;img src=&quot;/images/18.png&quot; alt=&quot;Floating terrain&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;I find it interesting how tiny the voxel terrain looks (all the terrain maps are 32x32). I think it&amp;#39;s because it&amp;#39;s easy to judge scale in that screenshot from the cube shapes. Heightmap terrain in particular, you have no idea about scale until you place objects on the map.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>To scale</title>
