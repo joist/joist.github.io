@@ -4,7 +4,7 @@
  <title>Test Blog</title>
  <link href="http://joist.github.io//atom.xml" rel="self"/>
  <link href="http://joist.github.io//"/>
- <updated>2014-03-27T21:53:39+11:00</updated>
+ <updated>2014-03-27T23:19:18+11:00</updated>
  <id>http://joist.github.io/</id>
  <author>
    <name>Joist</name>
@@ -32,6 +32,8 @@
 &lt;img src=&quot;/images/18.png&quot; alt=&quot;Floating terrain&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;I find it interesting how tiny the voxel terrain looks (all the terrain maps are 32x32). I think it&amp;#39;s because it&amp;#39;s easy to judge scale in that screenshot from the cube shapes. Heightmap terrain in particular, you have no idea about scale until you place objects on the map.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/19.gif&quot; alt=&quot;Gif of different terrains using same noise seed&quot;&gt;&lt;/p&gt;
 </content>
  </entry>
  
